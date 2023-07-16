@@ -1,0 +1,9 @@
+#NEEDED FOR CACHING MULTIPLE INSTANCES OF AN APPLICATION
+#This file helps Hazelcast to cache multiple instances of an application
+
+hazelcast:
+  network:
+    join:
+      multicast:
+        enabled: true
+
