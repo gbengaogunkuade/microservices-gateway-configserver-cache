@@ -6,8 +6,6 @@ import com.ogunkuade.specs.feignclient.AddressClient;
 import com.ogunkuade.specs.feignclient.EmployeeClient;
 import feign.FeignException;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
@@ -59,8 +57,6 @@ public class SpecsService {
 
 
 
-
-
     //CREATE BOTH NEW EMPLOYEE AND NEW ADDRESS FROM SPECS
     public SpecsResponse saveSpecs(SpecsRequest specsRequest){
         EmployeeRequest employeeRequest = new EmployeeRequest(
@@ -92,26 +88,6 @@ public class SpecsService {
 
 
     //GET ALL EMPLOYEES AND ADDRESSES
-//    public List<SpecsResponse> getAllSpecs2(){
-//        List<SpecsResponse> specsResponseList = new ArrayList<>();
-//        List<EmployeeResponse> employeeResponseList = employeeClient.gettingAllEmployees();
-//        List<AddressResponse> addressResponseList = addressClient.gettingAllAddresses();
-//        //convert each list to an iterator object
-//        ListIterator<EmployeeResponse> employeeResponseListIterator = employeeResponseList.listIterator();
-//        ListIterator<AddressResponse> addressResponseListIterator = addressResponseList.listIterator();
-//
-//        while(employeeResponseListIterator.hasNext()){
-//            SpecsResponse specsResponse = new SpecsResponse();
-//            specsResponse.setEmployeeResponse(employeeResponseListIterator.next());
-//            specsResponse.setAddressResponse(addressResponseListIterator.next());
-//            specsResponseList.add(specsResponse);
-//        }
-//        return specsResponseList;
-//    }
-
-
-
-    //GET ALL EMPLOYEES AND ADDRESSES
     public List<SpecsResponse> getAllSpecs(){
         List<SpecsResponse> specsResponseList = new ArrayList<>();
         try{
@@ -135,9 +111,6 @@ public class SpecsService {
         }
         return specsResponseList;
     }
-
-
-
 
 
 
