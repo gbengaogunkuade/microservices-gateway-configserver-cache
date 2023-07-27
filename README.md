@@ -1,7 +1,5 @@
 # microservices-gateway-configserver-cache
 
-Developed By **Gbenga Ogunkuade**
-
 This project demostrates the use of the following to achieve a faster API processing:
 
 - microservices
@@ -9,9 +7,10 @@ This project demostrates the use of the following to achieve a faster API proces
 - gateway service
 - config server
 - caching (hazelcast)
+- exception handling
 
 #
-My Name is Gbenga Ogunkuade (+234 8067647853 | electro4real@gmail.com).
+Developed By **Gbenga Ogunkuade** (+234 8067647853 | electro4real@gmail.com).
 I just love to code... 🙂
 
 
